@@ -1,8 +1,7 @@
 import { type ClassValue, clsx } from "clsx";
+import qs from "qs";
 import { twMerge } from "tailwind-merge";
 import { aspectRatioOptions } from "../../constants";
-import qs from "qs";
-
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -152,4 +151,4 @@ export const deepMergeObjects = (obj1: any, obj2: any) => {
   }
 
   return output;
-}; 
+};
